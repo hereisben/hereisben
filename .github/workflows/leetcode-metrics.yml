@@ -19,6 +19,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
 
+          config_padding: 0, 0, 24, 0
+
           # ===== LeetCode plugin =====
           plugin_leetcode: yes
           plugin_leetcode_user: hereisben
