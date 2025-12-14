@@ -63,7 +63,7 @@ print(me.bio)
        src="https://github-readme-stats.vercel.app/api?username=hereisben&show_icons=true&bg_color=0d1117&title_color=ffffff&text_color=c9d1d9&icon_color=00ff99&border_color=30363d&border_radius=10" />
 <img height="180"
        src="https://github-readme-stats.vercel.app/api/top-langs/?username=hereisben&layout=compact&langs_count=8&bg_color=0d1117&title_color=ffffff&text_color=c9d1d9&border_color=30363d&border_radius=10" />
-<img src="https://raw.githubusercontent.com/hereisben/hereisben/main/metrics.plugin.leetcode.svg?v=7" />
+<img src="https://raw.githubusercontent.com/hereisben/hereisben/main/metrics.plugin.leetcode.svg?v=10" />
 
 </p>
 
