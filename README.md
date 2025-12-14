@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/Email-111?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://linkedin.com/in/here-is-ben">
-    <img src="https://img.shields.io/badge/LinkedIn-111?style=for-the-badge&logo=linkedin" />
+    <img src="https://img.shields.io/badge/LinkedIn-here--is--ben-0A66C2?logo=linkedin&logoColor=white" />
   </a>
   <a href="https://YOUR_PORTFOLIO_SITE">
     <img src="https://img.shields.io/badge/Portfolio-111?style=for-the-badge&logo=vercel&logoColor=white" />
