@@ -5,9 +5,7 @@
 <h1 align="center">Yo 👋, I'm Ben Nguyen 👨‍💻</h1>
 
 <p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=900&center=true&vCenter=true&width=520&lines=Loves+Open+Source+💙;Full-Stack+Developer+in+progress;Building+cool+projects+daily"
-  />
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Full-Stack+Developer+Intern" alt="Typing SVG" /></a>
 </p>
 
 <p align="center">
