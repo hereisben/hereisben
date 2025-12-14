@@ -10,13 +10,13 @@
 
 <p align="center">
   <a href="mailto:hi.imben.nguyen@gmail.com">
-    <img src="https://img.shields.io/badge/GMAIL-hi.imben.nguyen@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/GMAIL-hi.imben.nguyen@gmail.com-111111?style=for-the-badge&logo=gmail&logoColor=white&labelColor=EA4335" />
   </a>
   <a href="https://linkedin.com/in/here-is-ben">
-    <img src="https://img.shields.io/badge/LinkedIn-here--is--ben-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/badge/LINKEDIN-here--is--ben-111111?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2" />
   </a>
   <a href="https://YOUR_PORTFOLIO_SITE">
-    <img src="https://img.shields.io/badge/PORTFOLIO-hereisben-111111?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/PORTFOLIO-hereisben-111111?style=for-the-badge&logo=vercel&logoColor=white&labelColor=555555" />
   </a>
 </p>
 
