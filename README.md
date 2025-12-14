@@ -10,13 +10,25 @@
 
 <p align="center">
   <a href="mailto:hi.imben.nguyen@gmail.com">
-    <img src="https://camo.githubusercontent.com/e393586f02e4f553e5da127a1ec4d390d51f0a254e0f6c7afc9380fb0f02f7e0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d476d61696c2d4431343833363f7374796c653d666f722d7468652d6261646765266c6f676f3d476d61696c266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&amp;logo=Gmail&amp;logoColor=white" style="max-width: 100%;">
+    <img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
+
+&nbsp;
+<img alt="sep" height="6"
+       src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='6'%3E%3Crect%20width='28'%20height='2'%20y='2'%20rx='1'%20fill='%231f6feb'/%3E%3C/svg%3E" />
+&nbsp;
+
   <a href="https://linkedin.com/in/here-is-ben">
-    <img src="https://raw.githubusercontent.com/PROxZIMA/PROxZIMA/master/src/social/linkedin.svg" alt="ben-nguyen" style="max-width: 100%;">
+    <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
+
+&nbsp;
+<img alt="sep" height="6"
+       src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='6'%3E%3Crect%20width='28'%20height='2'%20y='2'%20rx='1'%20fill='%231f6feb'/%3E%3C/svg%3E" />
+&nbsp;
+
   <a href="https://YOUR_PORTFOLIO_SITE">
-    <img src="https://img.shields.io/badge/Portfolio-111?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/PORTFOLIO-111111?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
 </p>
 
