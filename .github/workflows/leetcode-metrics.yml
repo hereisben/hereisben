@@ -12,21 +12,61 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate LeetCode metrics
+      - uses: actions/checkout@v4
+
+      - name: Generate LeetCode metrics (no auto-commit)
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.leetcode.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
+          output_action: none
 
-          # ===== Layout & style =====
-          config_display: compact
-          config_padding: 20, 20, 320, 20
-          config_background: "#0d1117"
-          config_border: yes
-          config_border_radius: 10
-
-          # ===== LeetCode plugin =====
           plugin_leetcode: yes
           plugin_leetcode_user: hereisben
           plugin_leetcode_sections: solved, skills, recent
+
+      - name: Patch SVG (fix cropping + add border/bg)
+        run: |
+          python - <<'PY'
+          import re, pathlib
+
+          p = pathlib.Path("metrics.plugin.leetcode.svg")
+          s = p.read_text(encoding="utf-8")
+
+          # 1) Force bigger height so it never crops
+          target_h = 325
+          s = re.sub(r'(<svg[^>]*\bheight=")\d+(")', rf'\g<1>{target_h}\2', s, count=1)
+
+          # 2) Make foreignObject fill the new height
+          s = re.sub(r'(<foreignObject[^>]*\bheight=")100%(")',
+                     rf'\g<1>{target_h}(")', s, count=1)
+
+          # 3) Insert background + border rect right after <svg ...>
+          rect = (
+              f'<rect x="0" y="0" width="100%" height="{target_h}" '
+              f'rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1"/>'
+          )
+          s = re.sub(r'(<svg[^>]*>)', r'\1\n  ' + rect, s, count=1)
+
+          # 4) Optional: force readable colors (simple override)
+          css = (
+              "\n<style>"
+              "svg{color:#c9d1d9} "
+              "h2{color:#ffffff} "
+              ".label{background-color:#58a6ff30;color:#c9d1d9} "
+              "</style>\n"
+          )
+          if "<defs>" in s:
+            s = s.replace("<defs>", "<defs>" + css, 1)
+          else:
+            s = s.replace(rect, rect + css, 1)
+
+          p.write_text(s, encoding="utf-8")
+          print("patched:", p)
+          PY
+
+      - name: Commit updated svg
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update leetcode metrics"
