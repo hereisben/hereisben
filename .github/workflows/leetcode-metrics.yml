@@ -19,11 +19,12 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
 
-          with:
-            config_padding: 20, 20, 160, 20
-            config_background: 0d1117
-            config_border: 1
-            config_border_radius: 10
+          # ===== Layout & style =====
+          config_display: compact
+          config_padding: 20, 20, 180, 20
+          config_background: 0d1117
+          config_border: 1
+          config_border_radius: 10
 
           # ===== LeetCode plugin =====
           plugin_leetcode: yes
