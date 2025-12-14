@@ -64,23 +64,24 @@ print(me.bio)
     src="https://github-readme-stats.vercel.app/api
       ?username=hereisben
       &show_icons=true
-      &theme=transparent
-      &hide_border=false
-      &border_color=ffffff
+      &bg_color=0d1117
       &title_color=ffffff
       &text_color=ffffff
-      &icon_color=ffffff"
+      &icon_color=00ff99
+      &border_color=30363d
+      &border_radius=10"
   />
+
 <img
     height="170"
     src="https://github-readme-stats.vercel.app/api/top-langs/
       ?username=hereisben
       &layout=compact
-      &theme=transparent
-      &hide_border=false
-      &border_color=ffffff
+      &bg_color=0d1117
       &title_color=ffffff
-      &text_color=ffffff"
+      &text_color=ffffff
+      &border_color=30363d
+      &border_radius=10"
   />
 
 </p> <br/> <!-- ========================= CONNECT ========================= --> <h2>🤝 Connect with me</h2> <p> <a href="https://linkedin.com/in/here-is-ben"> <img src="https://img.shields.io/badge/LinkedIn-111?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> <a href="https://twitter.com/YOUR_TWITTER"> <img src="https://img.shields.io/badge/Twitter-111?style=for-the-badge&logo=x&logoColor=white" /> </a> <a href="https://dev.to/YOUR_DEVTO"> <img src="https://img.shields.io/badge/dev.to-111?style=for-the-badge&logo=devdotto&logoColor=white" /> </a> <a href="https://medium.com/@YOUR_MEDIUM"> <img src="https://img.shields.io/badge/Medium-111?style=for-the-badge&logo=medium&logoColor=white" /> </a> <a href="https://instagram.com/YOUR_IG"> <img src="https://img.shields.io/badge/Instagram-111?style=for-the-badge&logo=instagram&logoColor=white" /> </a> </p> <br/> <!-- ========================= FOOTER ========================= --> <p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg"><img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" style="max-width: 100%;"></a></p>
