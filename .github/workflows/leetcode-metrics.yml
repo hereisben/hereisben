@@ -21,9 +21,9 @@ jobs:
 
           # ===== Layout & style =====
           config_display: compact
-          config_padding: 20, 20, 180, 20
-          config_background: 0d1117
-          config_border: 1
+          config_padding: 20, 20, 320, 20
+          config_background: "#0d1117"
+          config_border: yes
           config_border_radius: 10
 
           # ===== LeetCode plugin =====
