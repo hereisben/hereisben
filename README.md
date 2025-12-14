@@ -10,25 +10,13 @@
 
 <p align="center">
   <a href="mailto:hi.imben.nguyen@gmail.com">
-    <img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/GMAIL-hi.imben.nguyen@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-
-&nbsp;
-<img alt="sep" height="6"
-       src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='6'%3E%3Crect%20width='28'%20height='2'%20y='2'%20rx='1'%20fill='%231f6feb'/%3E%3C/svg%3E" />
-&nbsp;
-
   <a href="https://linkedin.com/in/here-is-ben">
-    <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-here--is--ben-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-
-&nbsp;
-<img alt="sep" height="6"
-       src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='6'%3E%3Crect%20width='28'%20height='2'%20y='2'%20rx='1'%20fill='%231f6feb'/%3E%3C/svg%3E" />
-&nbsp;
-
   <a href="https://YOUR_PORTFOLIO_SITE">
-    <img src="https://img.shields.io/badge/PORTFOLIO-111111?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/PORTFOLIO-hereisben-111111?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
 </p>
 
