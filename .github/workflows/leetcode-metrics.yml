@@ -34,7 +34,7 @@ jobs:
           p = pathlib.Path("metrics.plugin.leetcode.svg")
           s = p.read_text(encoding="utf-8")
 
-          target_h = 600
+          target_h = 325
 
           # 0) Fix broken foreignObject height
           s = re.sub(
