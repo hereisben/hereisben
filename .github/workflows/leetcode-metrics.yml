@@ -36,29 +36,50 @@ jobs:
 
           target_h = 320
 
-          # 1) Force bigger height in <svg ...>
+          # --- 0) CLEAN previous patches (remove duplicated rect & css we injected) ---
+          # Remove our injected rects (the ones with fill="#0d1117" stroke="#30363d")
+          s = re.sub(
+            r'\s*<rect[^>]*fill="#0d1117"[^>]*stroke="#30363d"[^>]*/>\s*',
+            "\n",
+            s
+          )
+
+          # Remove injected css blocks (exact signature)
+          s = re.sub(
+            r'\s*<style>svg\{color:#c9d1d9\} h2\{color:#ffffff\} \.label\{background-color:#58a6ff30;color:#c9d1d9\}</style>\s*',
+            "\n",
+            s
+          )
+
+          # --- 1) Force <svg> height ---
           s = re.sub(r'(<svg[^>]*\bheight=")\d+(")', rf'\g<1>{target_h}\2', s, count=1)
 
-          # 2) Make foreignObject fill the new height (replace exactly height="100%")
-          s = re.sub(r'(<foreignObject[^>]*\bheight=")100%(")',
-                    rf'\g<1>{target_h}\2', s, count=1)
+          # --- 2) Force <foreignObject> height (fix any broken value like 325(") ) ---
+          # Replace ANY height="...something..." with height="target_h"
+          s = re.sub(
+            r'(<foreignObject[^>]*\bheight=")[^"]*(")',
+            rf'\g<1>{target_h}\2',
+            s,
+            count=1
+          )
 
-          # 3) Insert background + border rect after <svg ...>
+          # --- 3) Insert rect exactly once after <svg ...> ---
           rect = (
             f'<rect x="0" y="0" width="100%" height="{target_h}" '
             f'rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1"/>'
           )
           s = re.sub(r'(<svg[^>]*>)', r'\1\n  ' + rect, s, count=1)
 
-          # 4) Add small overrides
-          css = "\n<style>svg{color:#c9d1d9} h2{color:#ffffff} .label{background-color:#58a6ff30;color:#c9d1d9}</style>\n"
+          # --- 4) Insert css exactly once inside <defs> ---
+          css = '<style>svg{color:#c9d1d9} h2{color:#ffffff} .label{background-color:#58a6ff30;color:#c9d1d9}</style>'
           if "<defs>" in s:
-            s = s.replace("<defs>", "<defs>" + css, 1)
+            s = s.replace("<defs>", "<defs>\n" + css + "\n", 1)
           else:
-            s = s.replace(rect, rect + css, 1)
+            # If no defs, just put after rect
+            s = s.replace(rect, rect + "\n" + css + "\n", 1)
 
           p.write_text(s, encoding="utf-8")
-          print("patched:", p)
+          print("patched:", p, "height:", target_h)
           PY
 
       - name: Commit updated svg
