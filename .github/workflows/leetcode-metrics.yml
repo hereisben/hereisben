@@ -18,8 +18,13 @@ jobs:
           filename: metrics.plugin.leetcode.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
+
+          # ===== LeetCode plugin =====
           plugin_leetcode: yes
           plugin_leetcode_user: hereisben
           plugin_leetcode_sections: solved, skills, recent
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_limit_recent: 2
+
+          config_display: large
+          config_padding: 0, 12%
