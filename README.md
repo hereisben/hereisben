@@ -101,7 +101,7 @@ print(me.bio)
 <h2>📊 Stats</h2>
 <p align="center">
 <!-- <img src="https://raw.githubusercontent.com/hereisben/hereisben/main/metrics.plugin.leetcode.svg?v=10" /> -->
-<img src="https://raw.githubusercontent.com/hereisben/hereisben/main/metrics.plugin.languages.details.svg?v=1" />
+<img src="https://raw.githubusercontent.com/hereisben/hereisben/main/metrics.plugin.languages.details.svg?v=10" />
 </p>
 
 <br/>
